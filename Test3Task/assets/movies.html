@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NEWS</title>
+    <style>
+        h1 {
+            color: yellow;
+        }
+        
+        body {
+            background-color: dimgrey;
+        }
+        
+        table {
+            background: khaki;
+            border: 2px solid dodgerblue;
+        }
+        
+        thead {
+            color: black;
+            font-weight: bold;
+        }
+        
+        tbody {
+            background: khaki;
+            color: black;
+        }
+        
+        td {
+            border: 2px solid saddlebrown;
+        }
+        
+        button {
+            background: yellow;
+            font-weight: bold;
+        }
+        
+        #seenNews {
+            display: none;
+        }
+        
+        #lovedNews {
+            display: none;
+        }
+        
+        #feedback {
+            width: 60%;
+            height: 200px;
+            margin: auto;
+            background-color: khaki;
+            color: dodgerblue;
+            border: 2px solid dodgerblue;
+            font-size: 18px;
+            text-align: start;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>News</h1>
+    <div id="mainContainer">
+        <table>
+            <thead>
+                <tr>
+                    <td>Заглавие:</td>
+                    <td>Побликувано на:</td>
+                    <td>Описание:</td>
+                    <td>Автор:</td>
+                    <td>Прегледано</td>
+                    <td>Любимо</td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div id="buttonsDIV">
+            <button type="submit" id="showSeenNews">Покажи прегледани</button>
+            <button type="submit" id="showlovedNews"> Покажи любими</button>
+        </div>
+    </div>
+    <div id="seenNews">
+        <table>
+            <thead>
+                <tr>
+                    <td>Заглавие:</td>
+                    <td>Побликувано на:</td>
+                    <td>Описание:</td>
+                    <td>Автор:</td>
+                    <td>Повече информация</td>
+                </tr>
+            </thead>
+            <tbody id="tableSeenNews">
+            </tbody>
+        </table>
+    </div>
+    <div id="lovedNews">
+        <table>
+            <thead>
+                <tr>
+                    <td>Заглавие:</td>
+                    <td>Побликувано на:</td>
+                    <td>Описание:</td>
+                    <td>Автор:</td>
+                    <td>Повече информация</td>
+                </tr>
+            </thead>
+            <tbody id="tableLovedNews">
+            </tbody>
+        </table>
+        <form action="POST">
+            <textarea name="" id="feedback" cols="30" rows="10"></textarea>
+            <button>Изпрати обратна връзка</button>
+        </form>
+    </div>
+    <script type="text/javascript" src="movies.js"></script>
+</body>
+
+</html>

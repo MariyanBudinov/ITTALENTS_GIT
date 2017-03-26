@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            background: dimgray;
+        }
+        
+        #loginForm {
+            width: 70%;
+            padding: 50px;
+            margin: auto;
+            display: block;
+            background-color: cadetblue;
+        }
+        
+        #loginForm>input {
+            width: 40%;
+            height: 30px;
+            color: dodgerblue;
+            font-size: 20px;
+        }
+        
+        #loginForm>button {
+            width: 10%;
+            height: 40px;
+            font-size: 20px;
+            color: white;
+            background-color: dodgerblue;
+        }
+        
+        #registerForm {
+            padding-top: 100px;
+            height: 150px;
+            width: 90%;
+            margin: auto;
+            background: darkgoldenrod;
+        }
+        
+        #registration {
+            width: 70%;
+            padding: 50px;
+            margin: auto;
+            display: block;
+            background-color: coral;
+        }
+        
+        #registration>input {
+            width: 30%;
+            height: 30px;
+            color: orangered;
+            font-size: 20px;
+        }
+        
+        #registration>button {
+            width: 40%;
+            height: 40px;
+            font-size: 20px;
+            color: white;
+            background-color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <form id="loginForm">
+            <input type="text" placeholder="User Name:">
+            <input type="password" placeholder="Password:">
+            <button id="loginBut">Login</button>
+        </form>
+
+        <div id="registerForm">
+            <form id="registration">
+                <input type="text" placeholder="User Name:">
+                <input type="password" placeholder="Password:">
+                <input type="text" placeholder="Age:">
+                <button id="registerBut">Register</button>
+            </form>
+        </div>
+
+        <script type="text/javascript" src="assets/controllerLogin.js"></script>
+        <script type="text/javascript" src="assets/serviceLogin.js"></script>
+    </body>
+
+</html>
